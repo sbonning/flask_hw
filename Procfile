@@ -1,1 +1,1 @@
-web: gunicorn hello_world:app --log-file=-
+gunicorn --pythonpath /path/to/containing/directory "app.wsgi_app:wsgi_app"
